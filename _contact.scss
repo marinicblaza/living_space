@@ -1,0 +1,39 @@
+.contact {
+    &__headline {
+        font-size: 60px;
+        padding-bottom: 74px;
+    }
+
+    &__form {
+        input, textarea, button {
+            outline: 0;
+            background: transparent;
+            font-size: 20px;
+            padding: 9px 21px;
+        }
+        
+        input {
+            border: 0;
+            border-bottom: 1px solid white;
+            width: 40%;
+        }
+
+        textarea, button {
+            border: 1px solid white;
+        }
+
+        button {
+            color: #c9c9c9;
+        }
+
+        &-inputs {
+            padding-bottom: 50px;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    }
+}

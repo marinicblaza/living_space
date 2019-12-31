@@ -1,0 +1,41 @@
+.interior-full {
+
+    &__body {
+        background: url(media/istockphoto-842254818-612x612.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &__overlay {
+        background-color: #212121;
+        width: 60%;
+        height: 100%;
+        padding: 107px 140px;
+
+        &-title {
+            @extend .text-gradient-color;
+            font-size: 76px;
+            margin-top: 0;
+        }
+
+        &-image {
+            width: 100%;
+        }
+
+        &-headline {
+            @extend .text-gradient-color;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        &-link {
+            @extend .text-gradient-color;
+            font-size: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

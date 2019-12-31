@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    padding: 303px 170px 200px;
+
+    &__text {
+        font-size: 16px;
+        line-height: 2.5;
+        color: white;
+        padding-right: 124px;
+    }
+
+    img {
+       width: 564px;
+       height: 710px;
+       padding: 20px;
+    }
+}

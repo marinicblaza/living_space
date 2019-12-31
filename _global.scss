@@ -1,0 +1,140 @@
+body {
+    font-family: Verdana;
+    color: white;
+    margin: 0;
+}
+
+p, ul {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: 0.32px;
+}
+
+ul {
+    margin: 0;
+}
+
+hr {
+    width: 18px;
+    border: 0;
+    border-top: 2px solid white;
+    margin: 20px 10px 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.text-gradient-color {
+    background: linear-gradient(to right, #6c5a3f 0%, #b4955f 22%, #ffffff 32%, #d6b97c 46%, #92773b 77%, #473c1a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::placeholder {
+    color: #888787;
+}
+
+.arrow {
+    width: 106px;
+    margin-top: 21px;
+
+    &-line {
+        background: linear-gradient(to right, #6c5a3f 0%, #b4955f 22%, #ffffff 32%, #d6b97c 46%, #92773b 77%, #473c1a 100%);
+        margin-top: 8px;
+        width: 91px;
+        height: 3px;
+        float: left;
+    }
+
+    &-point {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 15px solid #574821;
+        float: right;
+    }
+}
+
+.logo {
+    position: absolute;
+    padding: 80px 130px;
+    font-size: 24px;
+
+    &-title {
+        text-transform: uppercase;
+    }
+
+    &-subtitle {
+        font-size: 12px;
+        line-height: 2.33;
+        letter-spacing: 4.32px;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    padding: 112px 130px;
+
+    &-button{
+        display: block;
+        width: 60px;
+
+        &:before,
+        &:after {
+            background-color: #fff;
+            content: '';
+            display: block;
+            height: 4px;
+            transition: all 200ms ease-in-out;
+        }
+
+        &:before {
+            box-shadow: 0 10px 0 #fff;
+            margin-bottom: 16px;
+        }
+
+        &:hover:before {
+            box-shadow: 0 0 0 #fff;
+            transform: translateY(10px) rotate(45deg);
+        }
+
+        &:hover:after {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+    }
+}
+
+.close {
+    position: fixed;
+    bottom: 150px;
+    right: 190px;
+    font-size: 30px;
+    display: flex;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.mar-b {
+    margin-bottom: 56px;
+}
+
+.mar-b-big {
+    margin-bottom: 70px;
+}
+
+.mar-0 {
+    margin: 0;
+}
+
+.pad-l {
+    padding-left: 20px;
+}

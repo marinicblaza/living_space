@@ -1,0 +1,45 @@
+@mixin white-arrow-horizontal($arrow-line-float, $arrow-line-mar-l, $arrow-point-border-l, $arrow-point-border-r) {
+    .white-arrow {
+        width: 68px;
+    
+        &-line {
+            background: white;
+            margin-top: 38px;
+            width: 48px;
+            height: 2px;
+            float: $arrow-line-float;
+            margin-left: $arrow-line-mar-l;
+        }
+    
+        &-point {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: $arrow-point-border-l;
+            border-right: $arrow-point-border-r;
+            margin-top: 35px;
+            float: right;
+        }
+    }
+}
+
+@mixin white-arrow-vertical {
+    .white-arrow {
+        width: 100px;
+
+        &-line {
+            background: white;
+            width: 2px;
+            height: 48px;
+            float: right;
+        }
+
+        &-point {
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid white;
+            margin-top: 48px;
+            float: right;
+            margin-right: -5px;
+        }
+    }
+}
